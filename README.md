@@ -1,12 +1,12 @@
 # QuantumCrew-DevHack
-# 🌊 Project Vrishabhavathi – Smart Water Gradient Balancing
+#  Project Vrishabhavathi – Smart Water Gradient Balancing
 
-## 🧠 Problem Statement
+##  Problem Statement
 Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban flooding, while nearby districts like **Kolar and Chikkaballapur** suffer drought. Our project solves this by **capturing, monitoring, and redistributing water intelligently**, inspired by **the human circulatory system**.
 
 ---
 
-## 💡 Our Approach
+##  Our Approach
 - **Porous Asphalt Roads** → Act like skin pores, letting rainwater seep into underground storage.
 - **Pipes & Valves as Arteries & Veins** → Lift irrigation mimics the heart pumping water to dry farmlands.
 - **ESP32-based Prototype** → Mimics city stormwater network, with pump, solenoid valves, and water-level sensors.
@@ -15,7 +15,7 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 
 ---
 
-## 🖥 Frontend (Dashboard)
+##  Frontend (Dashboard)
 - Built with **HTML + CSS + JavaScript**
 - **Interactive Map (React-Leaflet)** showing:
   - Bengaluru lakes, storm drains
@@ -28,14 +28,14 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 
 ---
 
-## ⚙️ Backend
+##  Backend
 - **Node.js + Express** (simple API for local data exchange)
 - Receives sensor data from ESP32 via HTTP
 - Runs basic AI logic for water redistribution decision-making (turn pump on/off, route water)
 
 ---
 
-## 🔧 Prototype
+## Prototype
 - 4-Channel Relay Board
 - ESP32 Wi-Fi MCU
 - Water Pump + 2 Solenoid Valves
@@ -45,7 +45,7 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 
 ---
 
-## 🚀 Future Scope
+## Future Scope
 - AI-powered water demand prediction
 - Integration with **Bengaluru Smart City data**
 - Auto-controlled city valves & pumps
@@ -53,13 +53,13 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 
 ---
 
-## 🌟 Creative Keywords
+## Creative Keywords
 `#PorousAsphalt` `#LiftIrrigation` `#WaterGradientBalancing`  
 `#SmartCity` `#IoTForGood` `#UrbanFloodControl` `#DryLandRevival`
 
 ---
 
-## 🧑‍🤝‍🧑 Team
+## Team
 - Impana L– Hardware + Firmware
 - N S Aishwarya – Frontend + Visualization
 - Indhu S – Research + Documentation
@@ -67,7 +67,7 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 ---
 
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 project-vrishabhavathi/
@@ -78,14 +78,14 @@ project-vrishabhavathi/
 └── package.json       # Root package configuration
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 16+ and npm
 - Python 3.8+
 - Git
 
-### 🎯 **One-Click Setup (Recommended)**
+### **One-Click Setup (Recommended)**
 
 **Option 1: Python Script (Cross-platform)**
 ```bash
@@ -147,7 +147,7 @@ This starts sending live mock sensor data every 5 seconds.
 - Monitor alerts when capacity exceeds 80%
 - Control valves through the AI brain interface
 
-## 🏛️ Architecture
+##  Architecture
 
 ### Frontend (React + TailwindCSS)
 - **Real-time Dashboard:** Live sensor data cards with neumorphic design
@@ -158,14 +158,13 @@ This starts sending live mock sensor data every 5 seconds.
 ### Backend (Flask + WebSocket)
 - **REST API:** Sensor data, forecasts, and control endpoints
 - **WebSocket:** Real-time data streaming to frontend
-- **SQLite:** Persistent storage for AI decisions and historical data
 
 ### IoT Simulator (Python)
 - **Mock Sensors:** Rain gauge, water level, flow sensors
 - **Realistic Data:** Simulates actual Bengaluru weather patterns
 - **REST Integration:** Sends data to backend every 5 seconds
 
-## 🎨 Features
+##  Features
 
 ### Real-Time Monitoring
 - Live rainfall data (mm)
@@ -186,7 +185,7 @@ This starts sending live mock sensor data every 5 seconds.
 - System health monitoring
 - Emergency notifications
 
-## 🔧 API Endpoints
+##  API Endpoints
 
 - `GET /api/sensors` - Live sensor data
 - `GET /api/forecast` - Rainfall forecast
@@ -194,7 +193,7 @@ This starts sending live mock sensor data every 5 seconds.
 - `GET /api/ai-decision` - AI recommendations
 - `WebSocket /` - Real-time updates
 
-## 📱 Mobile Responsive
+##  Mobile Responsive
 
 The dashboard is fully responsive and works on:
 - Desktop browsers
@@ -202,7 +201,7 @@ The dashboard is fully responsive and works on:
 - Mobile phones
 - Smart displays
 
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend (Vercel/Netlify)
 ```bash
@@ -217,15 +216,15 @@ cd backend
 # Deploy with Procfile
 ```
 
-## 🎯 Hackathon Highlights
+##  Hackathon Highlights
 
 - **Real-time:** Live data updates every 5 seconds
 - **Interactive:** Clickable map with sensor details
-- **Smart:** AI-powered water management decisions
+- **Smart:** water management decisions
 - **Beautiful:** Neumorphic UI with smooth animations
 - **Scalable:** Modular architecture for easy extension
 
-## 🤝 Contributing
+##  Contributing
 
 This is a hackathon project showcasing:
 - IoT sensor simulation
@@ -233,6 +232,6 @@ This is a hackathon project showcasing:
 - Smart city water management
 - Creative data visualization
 
-## 📄 License
+##  License
 
 MIT License - Feel free to use for educational and hackathon purposes.
