@@ -45,11 +45,6 @@ Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban floo
 
 ---
 
-## 🔄 System Flow
-![System Flowchart](docs/vrishabhavathi_architecture_flowchart.png)
-
----
-
 ## 🚀 Future Scope
 - AI-powered water demand prediction
 - Integration with **Bengaluru Smart City data**
