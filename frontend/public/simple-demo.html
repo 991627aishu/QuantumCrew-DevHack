@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vrishabhavathi - Simple Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .status {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4ade80;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .card h3 {
+            margin-bottom: 15px;
+            color: #fbbf24;
+        }
+        
+        .sensor-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .sensor-item:last-child {
+            border-bottom: none;
+        }
+        
+        .sensor-value {
+            font-weight: bold;
+            color: #4ade80;
+        }
+        
+        .alert {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .alert.warning {
+            background: rgba(245, 158, 11, 0.2);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.7;
+        }
+        
+        .demo-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(245, 158, 11, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-badge">DEMO MODE</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🏙️ Project Vrishabhavathi</h1>
+            <p>Smart Water Management System - Demo Mode</p>
+        </div>
+        
+        <div class="status">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>System Status: Running in Demo Mode</span>
+            </div>
+            <p>This is a simplified demo version showing the UI without IoT sensors. The React app should be running on port 3000.</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>🌧️ Rainfall Sensors</h3>
+                <div class="sensor-item">
+                    <span>Koramangala</span>
+                    <span class="sensor-value">15.2 mm</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Indiranagar</span>
+                    <span class="sensor-value">8.7 mm</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Whitefield</span>
+                    <span class="sensor-value">12.3 mm</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>💧 Water Level</h3>
+                <div class="sensor-item">
+                    <span>Ulsoor Lake</span>
+                    <span class="sensor-value">65.3%</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Bellandur Lake</span>
+                    <span class="sensor-value">78.9%</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Hebbal Tank</span>
+                    <span class="sensor-value">72.1%</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🌊 Flow Rate</h3>
+                <div class="sensor-item">
+                    <span>MG Road Drain</span>
+                    <span class="sensor-value">145.6 L/s</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Electronic City</span>
+                    <span class="sensor-value">132.4 L/s</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Marathahalli</span>
+                    <span class="sensor-value">98.7 L/s</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>⚡ System Controls</h3>
+                <div class="sensor-item">
+                    <span>Whitefield Pump</span>
+                    <span class="sensor-value">ON</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Marathahalli Pump</span>
+                    <span class="sensor-value">OFF</span>
+                </div>
+                <div class="sensor-item">
+                    <span>Inlet Valve</span>
+                    <span class="sensor-value">OPEN</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert warning">
+            <strong>⚠️ Demo Mode Active</strong><br>
+            This is a simplified demo version. For full functionality with IoT sensors, please run the complete system with backend.
+        </div>
+        
+        <div class="footer">
+            <p>Project Vrishabhavathi - Smart Water Management System</p>
+            <p>If React app is not loading, check the terminal for errors</p>
+        </div>
+    </div>
+</body>
+</html>
