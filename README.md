@@ -1,7 +1,76 @@
 # QuantumCrew-DevHack
-# Project Vrishabhavathi - Real-Time Water Circulation Monitor
+# 🌊 Project Vrishabhavathi – Smart Water Gradient Balancing
 
-A comprehensive IoT hackathon project visualizing Bengaluru as a living circulatory system for water management.
+## 🧠 Problem Statement
+Bengaluru struggles with **water imbalance**: heavy rainfall leads to urban flooding, while nearby districts like **Kolar and Chikkaballapur** suffer drought. Our project solves this by **capturing, monitoring, and redistributing water intelligently**, inspired by **the human circulatory system**.
+
+---
+
+## 💡 Our Approach
+- **Porous Asphalt Roads** → Act like skin pores, letting rainwater seep into underground storage.
+- **Pipes & Valves as Arteries & Veins** → Lift irrigation mimics the heart pumping water to dry farmlands.
+- **ESP32-based Prototype** → Mimics city stormwater network, with pump, solenoid valves, and water-level sensors.
+- **LDR + Laser Pairs** → Measure water flow and detect backflow to prevent wastage.
+- **Relay Automation** → Controls pump & valves dynamically based on sensor readings.
+
+---
+
+## 🖥 Frontend (Dashboard)
+- Built with **HTML + CSS + JavaScript**
+- **Interactive Map (React-Leaflet)** showing:
+  - Bengaluru lakes, storm drains
+  - Water flow routes to dry agricultural lands
+  - Pump stations (lift irrigation points)
+- **Real-time Charts** displaying:
+  - Water levels
+  - Flow rate
+  - Pump/valve status
+
+---
+
+## ⚙️ Backend
+- **Node.js + Express** (simple API for local data exchange)
+- Receives sensor data from ESP32 via HTTP
+- Runs basic AI logic for water redistribution decision-making (turn pump on/off, route water)
+
+---
+
+## 🔧 Prototype
+- 4-Channel Relay Board
+- ESP32 Wi-Fi MCU
+- Water Pump + 2 Solenoid Valves
+- Water Level Sensor (PCB)
+- 2 Laser + LDR Pairs for flow sensing
+- Custom wiring with backflow prevention logic
+
+---
+
+## 🔄 System Flow
+![System Flowchart](docs/vrishabhavathi_architecture_flowchart.png)
+
+---
+
+## 🚀 Future Scope
+- AI-powered water demand prediction
+- Integration with **Bengaluru Smart City data**
+- Auto-controlled city valves & pumps
+- Open API for citizen dashboards
+
+---
+
+## 🌟 Creative Keywords
+`#PorousAsphalt` `#LiftIrrigation` `#WaterGradientBalancing`  
+`#SmartCity` `#IoTForGood` `#UrbanFloodControl` `#DryLandRevival`
+
+---
+
+## 🧑‍🤝‍🧑 Team
+- Impana L– Hardware + Firmware
+- N S Aishwarya – Frontend + Visualization
+- Indhu S – Research + Documentation
+
+---
+
 
 ## 🏗️ Project Structure
 
@@ -101,11 +170,6 @@ This starts sending live mock sensor data every 5 seconds.
 - **Realistic Data:** Simulates actual Bengaluru weather patterns
 - **REST Integration:** Sends data to backend every 5 seconds
 
-### AI Brain (Python)
-- **Smart Decisions:** Automated water routing based on rainfall and storage
-- **Predictive Logic:** Optimizes water flow to recharge wells, lakes, and overflow areas
-- **Control Interface:** Manual valve control with AI recommendations
-
 ## 🎨 Features
 
 ### Real-Time Monitoring
@@ -157,10 +221,6 @@ npm run build
 cd backend
 # Deploy with Procfile
 ```
-
-### Database
-- SQLite for development
-- PostgreSQL for production
 
 ## 🎯 Hackathon Highlights
 
